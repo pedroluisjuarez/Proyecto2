@@ -1,4 +1,5 @@
 # Simulación Gestor de memoria.
+Proyecto 2 Sistemas Operativos 1
 El proyecto consiste en simular un gestor de memoria, realizado de forma grafica.
 
 * por default se puede asignar el espacio que se necesita para la memoria.
@@ -24,4 +25,4 @@ Contiene toda la parte grafica:
 ```
 Simulador.java
 ```
-![Image GUI](img/01.jpg)
+![Image GUI](https://github.com/pedroluisjuarez/Proyecto2/blob/master/img/01.PNG)
