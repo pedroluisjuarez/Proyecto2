@@ -1,21 +1,27 @@
-# Memory Management Simulator
-An online simulation of operating system memory management to help computer science students understand the algorithm in a visual way.
+# Simulación Gestor de memoria.
+El proyecto consiste en simular un gestor de memoria, realizado de forma grafica.
 
-* Users can input processes of a given size and length of time.
-* Each process is automatically allocated to a ‘chunk’ in memory (as would be
-done by an operating system).
-* Memory chunks are partitioned for efficient process allocation (using the
-‘Best-Fit’ strategy to reduce fragmentation).
-* As the program runs, a clock ticks in the background, decrementing the time
-remaining for each process.
-* When a process terminates, chunks are automatically deallocated (freeing
-memory).
-* Memory is simulated using a doubly linked list data structure.
+* por default se puede asignar el espacio que se necesita para la memoria.
+* y se puede agregar una cantidad de procesos, lo cuales seran validados segun el espacio asignado.
+* se cuenta con un estadistico de estatus de la memoria.
+* una tabla para agregar los procesos.
+* una memoria con espacio para dichos procesos. 
 
-![Doubly linked list diagram](http://i.imgur.com/muMyi6A.jpg)
 
-### Demo
-A live version can be found here:
-[Memory Management Simulator](http://jamiegoodson.uk/projects/memory-management-simulator/)
+### Clase Memoria
+contiene los metodos y variable para la asignacion de los distintos procesos en la memoria.
+```
+Memoria.java
+```
+### Clase Proceso
+contiene los metodos y variables para la asignacion de procesos en tabla
+```
+Proceso.java
+```
 
-![Screenshot](https://i.imgur.com/9FnvI0n.png)
+### Clase simulador
+Contiene toda la parte grafica:
+```
+Simulador.java
+```
+![Image GUI](img/01.jpg)
